@@ -1,0 +1,10 @@
+---
+resources:
+  - ../../base
+  - service.yml
+patches:
+  - path: deployment.yml
+  - path: configmap.yml
+commonLabels:
+  env: prod
+namePrefix: prod-

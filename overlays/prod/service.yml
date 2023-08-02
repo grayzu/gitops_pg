@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sammy-app-ssl
+  labels:
+    app: sammy-app-ssl
+spec:
+  type: LoadBalancer
+  ports:
+    - name: sammy-app-https
+      port: 443
+      protocol: TCP
+      targetPort: 443
+  selector:
+    app: sammy-app2

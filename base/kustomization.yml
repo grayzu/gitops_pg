@@ -1,0 +1,9 @@
+---
+resources:
+  - configmap.yml
+  - deployment.yml
+  - service.yml
+
+commonLabels:
+  team: sales
+  env: base
